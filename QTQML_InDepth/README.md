@@ -12,8 +12,8 @@
     * functions are JS expressions
 
 ## Qml Property bindings vs the **imperative** paradigm
-    * **!** dont bother with implementation details for change-notification (e.g."signal-/slot-connection"), but directly (i.e.  "built into the language") state / **declare** that you want to have a binding x->y
-    * bindings **!=** assignments, hence ":" instead of "="
+* **!** dont bother with implementation details for change-notification (e.g."signal-/slot-connection"), but directly (i.e.  "built into the language") state / **declare** that you want to have a binding x->y
+* bindings **!=** assignments, hence ":" instead of "="
 
 ## Transformations
 <img src="clockDraft.PNG">
