@@ -16,5 +16,13 @@
 * bindings **!=** assignments, hence ":" instead of "="
 
 ## Transformations
-<img src="clockDraft.PNG">
+* custom Transformation
+ ```javascript 
+ transform: Rotation {
+                origin.x : xPosRotationCenter;
+                origin.y : yPosRotationCenter;
+                angle:0;
+            }
+ ```
+<img src="Clock.gif">
 

@@ -30,12 +30,12 @@ Window {
             transform: Rotation {
                 id: rotation;
                 origin.x : notRotatedImage.width*0.5;
-                origin.y : notRotatedImage.height*0.5;
+                origin.y : notRotatedImage.height;
                 angle:0;
             }
                 x: clockBackground.x + clockBackground.width * 0.5 - width * 0.5;
-                y: clockBackground.y + clockBackground.height * 0.5 - height*0.5;
-                height: clockBackground.height*0.8;
+                y: clockBackground.y + clockBackground.height * -0.0;
+                height: clockBackground.height*0.5;
                 fillMode: Image.PreserveAspectFit;
                 source: "file:///C:/Users/strai/source/repos/QTQML_InDepth/QTQML_InDepth/rocket.png";
                 Component.onCompleted: console.log("image loaded");
