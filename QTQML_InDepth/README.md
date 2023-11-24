@@ -16,12 +16,18 @@
 * bindings **!=** assignments, hence ":" instead of "="
 
 ## Transformations
-* custom Transformation
+* animated custom Rotation (i.e. custom rotation origin)
  ```javascript 
  transform: Rotation {
                 origin.x : xPosRotationCenter;
                 origin.y : yPosRotationCenter;
                 angle:0;
+                RotationAnimation on angle {
+                    from: 0;
+                    to: 360;
+                    duration: 60000;
+                    loops: Animation.Infinite;
+                }
             }
  ```
 <img src="Clock.gif">

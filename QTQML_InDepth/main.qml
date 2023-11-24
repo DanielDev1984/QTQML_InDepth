@@ -32,6 +32,12 @@ Window {
                 origin.x : notRotatedImage.width*0.5;
                 origin.y : notRotatedImage.height;
                 angle:0;
+                RotationAnimation on angle {
+                    from: 0;
+                    to: 360;
+                    duration: 60000;
+                    loops: Animation.Infinite;
+                }
             }
                 x: clockBackground.x + clockBackground.width * 0.5 - width * 0.5;
                 y: clockBackground.y + clockBackground.height * -0.0;
@@ -47,11 +53,12 @@ Window {
                     height: 10;
                     color:"lime";
                 }*/
-                SequentialAnimation {
+
+                /*SequentialAnimation {
                     running: true
                      loops: Animation.Infinite
                     NumberAnimation { target: rotation; property: "angle"; to: 360; duration: 10000 }
-                }
+                }*/
             }
         }
 
