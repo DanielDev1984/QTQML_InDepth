@@ -2,6 +2,8 @@ import QtQuick 2.9
 import QtQuick.Window 2.2
 
 Window {
+    readonly property string rootpath: "file:///C:/Users/strai/source/repos/QTQML_InDepth/QTQML_InDepth/data/images/transformations"
+
     id: root;
     visible: true
     width: 420
@@ -21,7 +23,7 @@ Window {
             color:root.color
             Image {
                 id:clockBackground;
-                source: "file:///C:/Users/strai/source/repos/QTQML_InDepth/QTQML_InDepth/clock_background.png";
+                source: rootpath + "/clock_background.png";
                 height: imageFrame.height*2;
                 fillMode: Image.PreserveAspectFit;
             }
@@ -54,7 +56,7 @@ Window {
                 y: 0;
                 height: clockBackground.height*0.2;
                 fillMode: Image.PreserveAspectFit;
-                source: "file:///C:/Users/strai/source/repos/QTQML_InDepth/QTQML_InDepth/asteroid.png";
+                source: rootpath + "/asteroid.png";
                 Component.onCompleted: console.log("image loaded");
                 transform: Rotation {
                 id: rotationAsteroid2;
@@ -99,7 +101,7 @@ Window {
                 y: clockBackground.y + clockBackground.height * -0.0;
                 height: clockBackground.height*0.5;
                 fillMode: Image.PreserveAspectFit;
-                source: "file:///C:/Users/strai/source/repos/QTQML_InDepth/QTQML_InDepth/rocket.png";
+                source: rootpath + "/rocket.png";
                 Component.onCompleted: console.log("image loaded");
                 /*Rectangle {
                     id: centerOfRocketRotation;

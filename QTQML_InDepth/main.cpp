@@ -10,7 +10,24 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/anchorsystem.qml")));
+
+    enum class Configuration {
+        Transformations,
+        Anchorsystem,
+    };
+
+    const Configuration config{ Configuration::Transformations };
+
+    switch (config)
+    {
+    case Configuration::Anchorsystem:
+        engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/anchorsystem.qml")));
+        break;
+    case Configuration::Transformations:
+        engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/transformation.qml")));
+        break;
+    }
+    
     if (engine.rootObjects().isEmpty())
         return -1;
 
