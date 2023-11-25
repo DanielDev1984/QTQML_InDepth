@@ -50,5 +50,24 @@
  }
  
  ```
-<img src="Clock.gif">
+<img src="Animations.gif">
 
+
+## Anchorsystem (`anchorsystem.qml`)
+* behold, the anchorsystem (i.e. margins and anchors)
+ ```javascript 
+ Item {
+        id:anchoredItem;        
+        anchors {
+            right: outerRightItem.left;
+            rightMargin: marginSize;
+            top: outerTopItem.bottom;
+            topMargin: marginSize;
+            left: outerLeftItem.right;
+            leftMargin: marginSize;
+            bottom: outerBottomItem.top;
+            bottomMargin: marginSize;
+        }
+    }
+ ```
+<img src="Anchors.gif">

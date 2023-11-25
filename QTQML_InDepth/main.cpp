@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
         Anchorsystem,
     };
 
-    const Configuration config{ Configuration::Transformations };
+    const Configuration config{ Configuration::Anchorsystem };
 
     switch (config)
     {
