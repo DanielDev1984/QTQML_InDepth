@@ -40,9 +40,9 @@ Window {
                 }
             }
             /*Rectangle {
-                    id: centerOfRotationAsteroid;
-                    x: rotationAsteroid.origin.x - centerOfRotationAsteroid.width*0.5;
-                    y: rotationAsteroid.origin.y - centerOfRotationAsteroid.height*0.5;
+                    id: centerOfRotationAsteroidGlobal;
+                    x: rotationAsteroid.origin.x - centerOfRotationAsteroidGlobal.width*0.5;
+                    y: rotationAsteroid.origin.y - centerOfRotationAsteroidGlobal.height*0.5;
                     width: 10;
                     height: 10;
                     color:"lime";
@@ -69,9 +69,9 @@ Window {
                 }
             }
             /*Rectangle {
-                    id: centerOfRotationAsteroid2;
-                    x: rotationAsteroid2.origin.x - centerOfRotationAsteroid2.width*0.5;
-                    y: rotationAsteroid2.origin.y - centerOfRotationAsteroid2.height*0.5;
+                    id: centerOfRotationAsteroidLocal;
+                    x: rotationAsteroid2.origin.x - centerOfRotationAsteroidLocal.width*0.5;
+                    y: rotationAsteroid2.origin.y - centerOfRotationAsteroidLocal.height*0.5;
                     width: 10;
                     height: 10;
                     color:"red";

@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/qt/qml/qtqml_indepth">
-        <file>main.qml</file>
+        <file>transformation.qml</file>
+        <file>anchorsystem.qml</file>
     </qresource>
 </RCC>

@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/anchorsystem.qml")));
     if (engine.rootObjects().isEmpty())
         return -1;
 
