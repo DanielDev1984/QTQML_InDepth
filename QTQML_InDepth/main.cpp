@@ -14,9 +14,10 @@ int main(int argc, char *argv[])
     enum class Configuration {
         Transformations,
         Anchorsystem,
+        Interaction
     };
 
-    const Configuration config{ Configuration::Anchorsystem };
+    const Configuration config{ Configuration::Interaction };
 
     switch (config)
     {
@@ -25,6 +26,9 @@ int main(int argc, char *argv[])
         break;
     case Configuration::Transformations:
         engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/transformation.qml")));
+        break;
+    case Configuration::Interaction:
+        engine.load(QUrl(QStringLiteral("qrc:/qt/qml/qtqml_indepth/interaction.qml")));
         break;
     }
     
