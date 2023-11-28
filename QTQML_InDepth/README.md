@@ -72,5 +72,5 @@
  ```
 <img src="Anchors.gif">
 
-## Anchorsystem (`interaction.qml`)
+## Interaction (`interaction.qml`)
 * keyboard, mouse, gesture UI-support
