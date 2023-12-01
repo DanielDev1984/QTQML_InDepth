@@ -74,3 +74,24 @@
 
 ## Interaction (`interaction.qml`)
 * keyboard, mouse, gesture UI-support
+### Flickable (peekhole)
+```javascript 
+// allow for flicking the Flickable-content with standard mouse "drag" / "flick"
+Flickable {
+        id: flick
+        anchors {
+            fill: parent;
+        }
+        // use the content dimentsions as a peekhole to the larger, "underlying", child-Image
+        contentWidth: widerThanFlickable;
+        contentHeight:higherThanFlickable;
+        // child of the content!
+        Image {
+            id:background;
+            source: rootpath + "/tintin.png";
+            width: flick.contentWidth; 
+            height: flick.contentHeight;
+        }
+    }
+```
+<img src="Interactions.gif">
