@@ -88,7 +88,7 @@ Flickable {
         // child of the content!
         Image {
             id:background;
-            source: iamgeSource;
+            source: imageSource;
             width: flick.contentWidth; 
             height: flick.contentHeight;
         }
