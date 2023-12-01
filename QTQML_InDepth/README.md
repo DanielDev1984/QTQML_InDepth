@@ -88,7 +88,7 @@ Flickable {
         // child of the content!
         Image {
             id:background;
-            source: rootpath + "/tintin.png";
+            source: iamgeSource;
             width: flick.contentWidth; 
             height: flick.contentHeight;
         }
