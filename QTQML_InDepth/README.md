@@ -95,3 +95,35 @@ Flickable {
     }
 ```
 <img src="Interactions.gif">
+
+### Key navigation (arrow-left, -right, -up, -down)
+```javascript
+Rectangle {
+        id: leftTopImageContainer;
+        anchors {
+            left: root.left;
+            top: root.top;
+            leftMargin: 20;
+            topMargin: 20;
+        }
+        color: activeFocus? "red" : root.color;
+        width: 80;
+        height: 80;
+        Image {
+            anchors {
+                fill: parent;
+            }
+            source: iamgeSource;
+            fillMode: Image.PreserveAspectFit
+            visible: parent.activeFocus ? true : false;
+        }
+        // use the KeyNavigation attached properties for conveniently setting the focus to a dedicated item
+        //KeyNavigation.right: rightTopImageContainer;
+        // use the Keys-attached signal handlers to e.g. trigger a dedicated function or set multiple object-properties (as done here)
+        // Key.onSignal: *Container.focus = true is equivalent to KeyNavigation.key: *Container
+        Keys.onRightPressed: interactionText.text = "pressed right-arrow", rightTopImageContainer.focus = true;
+        Keys.onDownPressed: interactionText.text = "pressed down-arrow", leftBottomImageContainer.focus = true;
+        focus: true;
+    }
+```
+<img src="Interactions_keynavigation.gif">
